@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Retro Pac-Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div class="score-board">
+                <p>Score: <span id="current-score">0</span></p>
+                <p>High Score: <span id="high-score">0</span></p>
+            </div>
+            <div id="menu">
+                <h1>PAC-MAN</h1>
+                <select id="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="auto">Auto (Adaptive)</option>
+                </select>
+                <button id="start-btn">Start Game</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="mobile-controls">
+            <button id="btn-up">U</button>
+            <div class="horizontal-btns">
+                <button id="btn-left">L</button>
+                <button id="btn-right">R</button>
+            </div>
+            <button id="btn-down">D</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
